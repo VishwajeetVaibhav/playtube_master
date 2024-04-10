@@ -36,7 +36,7 @@ const LeftNav = () => {
         mobileMenu ? "translate-x-0" : "translate-x-[-240px]"
       }`}
     >
-      <div className="md:hidden flex justify-center mb-2">
+      <div className="flex justify-center mb-2 md:hidden">
         <div
           onClick={handleThemeSwitch}
           className="bg-[#c5e0fb] flex items-center py-1 px-5 rounded-md cursor-pointer hover:bg-[#9dcaf7]"
@@ -53,7 +53,7 @@ const LeftNav = () => {
         </div>
       </div>
 
-      <div className="flex px-5 flex-col">
+      <div className="flex flex-col px-5">
         {categories.map((item) => {
           return (
             <div key={item.name}>
@@ -78,7 +78,7 @@ const LeftNav = () => {
         })}
         <hr className="my-5 border-white/[0.2] md:border-black/[0.2] border dark:border dark:border-white/[0.2]" />
         <div className="text-white/[0.5] md:text-black/[0.7] dark:text-white/[0.5] text-[12px]">
-          Build by Somnath Dey | Codophile
+          Build by Vishwajeet Vaibhav
         </div>
       </div>
     </div>
